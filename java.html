@@ -12,9 +12,10 @@
          return element * 3
       })
 
-      var even_array = number_array.filter(function(element,index,array){
-        return element % 2 == 0
+      var even_array = new_number_array.filter(function(element,index,array){
+        return element % 2 === 0
       })
+      console.log(new_number_array)
       console.log(even_array)
     </script>
   </body>
