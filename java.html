@@ -12,11 +12,69 @@
          return element * 3
       })
 
-      var even_array = new_number_array.filter(function(element,index,array){
-        return element % 2 === 0
+      var even_array = number_array.filter(function(element,index,array){
+
       })
-      console.log(new_number_array)
-      console.log(even_array)
+      var koders_array = [
+  {
+    'nombre': 'David',
+    'edad': 22,
+    'genero': 'M',
+    'hobbies': [
+      'Fotografia',
+      'Viajar'
+    ]
+  },
+  {
+    'nombre': 'Jorge',
+    'edad': 23,
+    'genero': 'M',
+    'hobbies': [
+      'Videojuegos',
+      'Lectura',
+      'Dibujar'
+    ]
+  },
+  {
+    'nombre': 'Erick',
+    'edad': 25,
+    'genero': 'M',
+    'hobbies': [
+      'Caligrafia',
+      'Videojuegos'
+    ]
+  },
+  {
+    'nombre': 'Diana',
+    'edad': 27,
+    'genero': 'F',
+    'hobbies': [
+      'Hardware',
+      'Videojuegos'
+    ]
+  },
+  {
+    'nombre': 'Rodo',
+    'edad': 32,
+    'genero': 'M',
+    'hobbies': [
+      'Musica',
+      'Programacion'
+    ]
+  }
+]
+koders_array.forEach(function(item,index){
+
+  console.log( item.nombre)
+})
+koders_array.forEach(function(element){
+  console.log("hola soy "+element.nombre)
+  element.hobbies.forEach(function(element){
+    console.log("y mis hobbies son: "+ element)
+  })
+})
+koders_array.filter()
+
     </script>
   </body>
 </html>
